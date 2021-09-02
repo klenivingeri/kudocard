@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@200;300;400;500&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Glory', sans-serif;
+}
+a{
+  text-decoration: none;
+  font-family:  sans-serif;
+  font-family: 'Glory', sans-serif;
+}
+
+body{
+  background-color: #63B3ED;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #EBF8FF;
+}
+
+header .logo{
+  border-radius: 30px;
+}
+
+header .kudocard{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 55px;
+}
+
+header .title{
+  display: flex;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+header .subtitle{
+ font-size: 0.9rem;
+}
+
+.div-select{
+  width: 300px;
+  overflow: hidden;
+}
+
+.div-select select {
+  background: url(./img/seta.png) no-repeat #5faffa;
+  background-position: 250px center;
+  width: 295px;
+  height: 48px;
+  border-radius: 7px;
+  font-size: 18px;
+  padding:  13px 10px 13px 12px;
+  color:#fff;
+  text-indent: 0.01px;
+  text-overflow: "";
+  appearance: none;
+  border:0px;
+}
+
+select::-ms-expand {
+  display: none;
+} 
+
+.galery{
+  max-width: 1085px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+  
+}
+.galery .card{ 
+  height: 230px;
+  width: 320px;
+  position: relative;
+  opacity: 0;
+}
+.galery .card-body{
+
+  height: 230px;
+  width: 320px;
+  top: 0;
+  left: 0;
+  padding: 3.1rem  1.5rem 0 1.3rem;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 5px 5px 10px #3182CE;
+  transition: 0.3s;
+}
+
+.galery .card-body:hover{
+  top: -3px;
+  left: -3px;
+  font-size: 1rem;
+  position:absolute;
+  margin: 0 auto;
+  box-shadow: 5px 10px 10px #3182CE;
+  height: 233px;
+  width: 327px;
+  
+}
+.galery .card-body p {
+  font-weight: bold;
+  margin: .2rem;
+  background:rgb(0, 0, 0, .1);
+  border-radius: 3px;
+  padding: 3px;
+  width: 100%;
+}
+.galery .card-body p:nth-child(3n) {
+  display: block;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: .1rem;
+  height: 100px;
+  width: 100%;
+}
+
+.card.active{
+  animation: on 0.5s  forwards;
+}
+@keyframes on {
+  0% { opacity: 0; }
+  99% { opacity: 1; }
+  100% { display:block; opacity: 1;}
+}
+
+.card.desactve{
+  animation: off 0.1s  forwards;
+}
+@keyframes off {
+  0% { opacity: 0; display:none;  position: absolute; }
+  100% {  
+        opacity: 0; 
+        visibility:hidden;  
+        overflow-y: hidden;
+        position: absolute;
+      }
+}
+
+.card-select{
+
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  height: 100vh;
+  width: 100%;
+  background:  rgb(0, 0,0, .3);
+}
+.card-select.show{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: on 0.5s  forwards;
+}
+
+.card-select .card-body{
+  font-size: 2rem;
+  height: 460px;
+  width: 640px;
+  top: 0;
+  left: 0;
+  padding: 6.2rem  2.5rem 0 2.5rem;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0px 10px 30px rgb(0, 0, 0, .5);
+  transition: 0.3s;
+}
+
+.card-select .card-body p {
+  font-weight: bold;
+  margin: .2rem;
+  background:rgb(0, 0, 0, .1);
+  border-radius: 3px;
+  width: 100%;
+ 
+}
+.card-select .card-body p:nth-child(3n) {
+  padding: 3px;
+  display: block;
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: .1rem;
+  height: 230px;
+  width: 100%;
+}
