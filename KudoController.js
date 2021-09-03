@@ -88,7 +88,7 @@ export default class Kudo{
       case 'Obrigado':
         imagem = 'obrigado'
         break;
-        case 'Ótimo trabalho':
+        case 'Ótimo Trabalho':
         imagem = 'otimo-trabalho'
         break;
         case 'Sensacional':
@@ -97,7 +97,7 @@ export default class Kudo{
         case 'Parabéns':
         imagem = 'parabens'
         break;
-        case 'Bom trabalho':
+        case 'Muito bom':
         imagem = 'bom-trabalho'
         break;
     
