@@ -71,8 +71,10 @@ select::-ms-expand {
   display: none;
 } 
 
+
 .galery{
-  max-width: 1085px;
+  max-width: 1030px;
+
   margin: 0 auto;
   display: flex;
   gap: 1rem;
@@ -195,4 +197,18 @@ select::-ms-expand {
   letter-spacing: .1rem;
   height: 230px;
   width: 100%;
+}
+
+@media (max-width: 1050px )
+{
+  .galery{
+    max-width: 690px;
+  }
+}
+
+@media (max-width: 690px )
+{
+  .galery{
+    max-width: 355px;
+  }
 }
