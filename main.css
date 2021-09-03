@@ -115,7 +115,8 @@ select::-ms-expand {
 .galery .card-body p {
   font-weight: bold;
   margin: .2rem;
-  background:rgb(0, 0, 0, .1);
+  border:1px solid rgb(200, 200, 150, .1);
+  background: rgb(200, 200, 150, .1);
   border-radius: 3px;
   padding: 3px;
   width: 100%;
@@ -141,7 +142,7 @@ select::-ms-expand {
 }
 
 .card.desactve{
-  animation: off 0.1s  forwards;
+  animation: off 0.3s  forwards;
 }
 @keyframes off {
   0% { opacity: 0; display:none;  position: absolute; }
@@ -189,6 +190,8 @@ select::-ms-expand {
   background:rgb(0, 0, 0, .1);
   border-radius: 3px;
   width: 100%;
+  border:1px solid rgb(200, 200, 150, .1);
+  background: rgb(200, 200, 150, .1);
  
 }
 .card-select .card-body p:nth-child(3n) {
@@ -229,7 +232,7 @@ select::-ms-expand {
     width: 100%;
     top: 0;
     left: 0;
-    padding: 4rem  2rem 0 1.5rem;
+    padding: 5rem  2rem 0 1.5rem;
     border-radius: 5px;
     background: white;
     box-shadow: 0px 10px 30px rgb(0, 0, 0, .5);
@@ -239,7 +242,8 @@ select::-ms-expand {
   .card-select .card-body p {
     font-weight: bold;
     margin: .2rem;
-    background:rgb(0, 0, 0, .1);
+    border:1px solid rgb(200, 200, 150, .1);
+    background: rgb(200, 200, 150, .1);
     border-radius: 3px;
     width: 100%;
    

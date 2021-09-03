@@ -3,7 +3,7 @@ const data = [
 		"de": "Alisson@",
 		"para": "Bruna@",
 		"type": "Obrigado",
-		"msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+		"msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry."
 	},
 	{
 		"de": "Alisson@",
