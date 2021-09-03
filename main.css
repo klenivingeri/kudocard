@@ -127,6 +127,8 @@ select::-ms-expand {
   letter-spacing: .1rem;
   height: 100px;
   width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 .card.active{
@@ -197,6 +199,8 @@ select::-ms-expand {
   letter-spacing: .1rem;
   height: 230px;
   width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 @media (max-width: 1050px )
@@ -211,4 +215,47 @@ select::-ms-expand {
   .galery{
     max-width: 355px;
   }
+  header{
+    flex-direction: column;
+  }
+  .logo{
+    display: none;
+  }
+  
+  .card-select .card-body{
+    
+    font-size: 2rem;
+    height: 460px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 4rem  2rem 0 1.5rem;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0px 10px 30px rgb(0, 0, 0, .5);
+    transition: 0.3s;
+  }
+  
+  .card-select .card-body p {
+    font-weight: bold;
+    margin: .2rem;
+    background:rgb(0, 0, 0, .1);
+    border-radius: 3px;
+    width: 100%;
+   
+  }
+  .card-select .card-body p:nth-child(3n) {
+    padding: 3px;
+    display: block;
+    font-weight: bold;
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+    height: 270px;
+    width: 100%;
+
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  
+
 }
