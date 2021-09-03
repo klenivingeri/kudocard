@@ -1,6 +1,6 @@
 export default class Kudo{
   constructor(data){
-    this.data = data;
+    this.data = this.rando(data);
     this.build();
 
   }
@@ -8,15 +8,37 @@ export default class Kudo{
   this.selectNameEl = document.getElementById('select-name');
   this.galeryEl = document.getElementById('galery');
   this.cardSelect = document.getElementById('card-select')
+  this.embarralhar = document.getElementById('embarralhar')
   this.dataSelect = []
   this.getSelectName()
-    
-  } // build
 
+  this.embarralhar.addEventListener('click', e=>{
+  
+      
+      this.galeryEl.innerHTML = ""
+
+      this.rando(this.data).forEach(card =>{
+        this.galeryEl.appendChild(this.insertElementCard(card))
+        this.dataSelect.push(card.para)
+      })
+
+  })
+
+  } // build
+  rando(data){
+    for (let i = data.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      let temp = data[i];
+      data[i] = data[j];
+      data[j] = temp;
+    }
+    return data
+  }
   getData(){
     return  this.data;
   } // getData
 
+ 
   getSelectName(){
     this.insertElement(false)
     this.selectNameEl.addEventListener('change', e => {
@@ -44,6 +66,12 @@ export default class Kudo{
       if(!this.dataSelect.find(value => value == card.para)){
         this.selectNameEl.appendChild(this.createElementOption(card))
       }
+      this.galeryEl.appendChild(this.insertElementCard(card))
+      this.dataSelect.push(card.para)
+    });
+
+    this.data.forEach(card => {
+
       this.galeryEl.appendChild(this.insertElementCard(card))
       this.dataSelect.push(card.para)
     });

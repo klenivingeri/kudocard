@@ -54,6 +54,15 @@ header .subtitle{
   height: 12px;
 }
 
+#embarralhar{
+  height: 49px;
+  width: 100px;
+  background: #63B3ED;
+  border: 1px solid white;
+  color: white;
+  border-radius: 7px;
+}
+
 .div-select{
   width: 300px;
   overflow: hidden;
@@ -266,6 +275,14 @@ select::-ms-expand {
 
     overflow: hidden;
     overflow-y: auto;
+  }
+  #embarralhar{
+    height: 49px;
+    width: 295px;
+    background: #63B3ED;
+    border: 1px solid white;
+    color: white;
+    border-radius: 7px;
   }
   
 
